@@ -1,0 +1,15 @@
+<div class="navbar">
+  <%= link_to '<h1>Wikinimous</h1>'.html_safe, :root %>
+  <%= link_to '<p>New Article</p>'.html_safe, 'articles/new' %>
+</div>
+
+<div class="container">
+  <div class="row">
+    <article>
+      <h2 class="art-title"><%= @article.title %> <%= link_to "delete", "/articles/#{@article.id}",
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></h2>
+      <p><%= @article.content %></p>
+    </article>
+  </div>
+</div>
