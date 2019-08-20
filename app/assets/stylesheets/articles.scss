@@ -45,7 +45,6 @@ body {
     color: #337ab7;
     &:hover {
       color: #24527B;
-      text-decoration: underline;
     }
   }
 }
@@ -53,4 +52,7 @@ body {
 .art-title {
   border-bottom: 1px solid #EEEEEE;
   padding-bottom: 15px;
+  a {
+    text-decoration: none;
+  }
 }

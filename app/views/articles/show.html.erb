@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row">
     <article>
-      <h2 class="art-title"><%= @article.title %> <%= link_to "delete", "/articles/#{@article.id}",
+      <h2 class="art-title"><%= @article.title %> <%= link_to raw("&#128465;"), "/articles/#{@article.id}",
         method: :delete,
         data: { confirm: "Are you sure?" } %></h2>
       <p><%= @article.content %></p>
